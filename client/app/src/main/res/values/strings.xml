@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">GuidingAll</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_floor_choice">Floor choice</string>
+    <string name="action_settings">Network ip setting</string>
+    <string name="action_account_settings">Login</string>
+    <string name="item_settings">Item setting</string>
+    <string name="settings">settings</string>
+
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="nav_drawer_items">
+        <item>Home</item>
+        <item>Store</item>
+        <item>Indoor map</item>
+        <item>Find people</item>
+        <item>Connected item</item>
+        <item>Tracking platform</item>
+        <item>System info</item>
+    </string-array>
+
+    <!-- Nav Drawer List Item Icons -->
+    <!-- Keep them in order as the titles are in -->
+    <array name="nav_drawer_icons">
+        <item>@drawable/ic_home</item>
+        <item>@drawable/ic_ibeacon</item>
+        <item>@drawable/ic_indoor_nav</item>
+        <item>@drawable/ic_find_people</item>
+        <item>@drawable/ic_find_goods</item>
+        <item>@drawable/ic_escape</item>
+        <item>@drawable/ic_info</item>
+    </array>
+
+    <!-- Content Description -->
+    <string name="desc_list_item_icon">Item Icon</string>
+    <string name="stop_route">Stop guiding</string>
+    <string name="emergency_mode_simulation">Enable emergency simulation mode</string>
+    <string name="emergency_mode_simulation_stop">Disable emergency simulation mode</string>
+    <string name="customer_simulation">People simulation</string>
+    <string name="shortest_time_path">Shortest time path</string>
+    <string name="set_current_location">Set start location</string>
+    <string name="set_target_location">Set target location</string>
+    <string name="shortest_distance_path">Shortest distance path</string>
+    <string name="reset_button">Reset</string>
+    <string name="txtHintUsername">Account</string>
+    <string name="txtHintPassword">Password</string>
+    <string name="txtHintIpAppress">IP Address</string>
+    <string name="accept">Accept</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="loadingSuccess">Loading successful</string>
+    <string name="loadingSuccessMessage">Load the indoor map successfully from server</string>
+    <string name="ok">OK</string>
+    <string name="choice_floor_message">Choice the target floor</string>
+    <string name="loading">Loading…</string>
+    <string name="wait">Please wait…</string>
+    <string name="logoutWarnMessage">Are you sure to logout?</string>
+    <string name="Warn">Warning</string>
+    <string name="loadingMap">Loading map from server</string>
+    <string name="findItemMessage">Check my item?</string>
+    <string name="loadingFailed">Loading failed, check your network configuration</string>
+    <string name="itemList">Item list</string>
+    <string name="no">No</string>
+    <string name="findConnectedItem">Connected item finding</string>
+    <string name="findConnectedItemMessage">Check the item?</string>
+    <string name="hereWeGo">Here we go</string>
+    <string name="immediatelyPlanThePath">Immediately plan the path to your: </string>
+    <string name="loadingRegisteredItem">Loading the registered item from server</string>
+    <string name="registeredItem">Registered item</string>
+    <string name="findItem">Find item</string>
+    <string name="nothing">Nothing to find</string>
+    <string name="findPeopleMessage">Do you want to find out the user?</string>
+    <string name="languageChoice">Language</string>
+    <string name="wallet">wallet</string>
+    <string name="date">2015–01–15</string>
+    <string name="location">台中市西屯區文華路100號</string>
+    <string name="phone">0922–123–456</string>
+    <string name="reward">5000</string>
+    <string name="title_activity_maps_fragment">Map</string>
+    <string name="btn_post_lost_item">Post lost item</string>
+    <string name="btn_project_overview">Project overview</string>
+    <string name="btn_location_simulation">Outdoor location simulation</string>
+    <string name="title_activity_maps">Location simulation</string>
+
+    <string name="new_message_notification_title">Watch out your %1$s</string>
+
+    <!-- TODO: remove this placeholder text -->
+    <string name="new_message_notification_placeholder_text">Oops! Your %1$s maybe left from you</string>
+
+    <string name="action_share">Share</string>
+    <string name="action_reply">Reply</string>
+
+    <string name="title_activity_image_activty">ImageActivty</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+
+
+</resources>

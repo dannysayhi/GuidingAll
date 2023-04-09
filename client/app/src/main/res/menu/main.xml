@@ -1,0 +1,34 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="gofast.smartguide.MainActivity" >
+
+    <item
+        android:id="@+id/action_floor_choice"
+        android:showAsAction="withText|ifRoom"
+        android:title="@string/action_floor_choice"/>
+
+    <item
+        android:id="@+id/action_account_settings"
+        android:showAsAction="withText|ifRoom"
+        android:title="@string/action_account_settings"/>
+
+    <item
+        android:id="@+id/action_ip_settings"
+        android:orderInCategory="100"
+        android:showAsAction="withText"
+        android:title="@string/action_settings"/>
+
+    <item
+        android:id="@+id/action_item_settings"
+        android:orderInCategory="100"
+        android:showAsAction="withText"
+        android:title="@string/item_settings"/>
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:showAsAction="withText"
+        android:title="@string/settings"/>
+
+
+</menu>

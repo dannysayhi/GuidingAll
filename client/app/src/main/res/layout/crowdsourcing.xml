@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/iv_itemPhoto"
+            android:src="@drawable/add_photo"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="12dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/iv_itemName"
+            android:src="@drawable/item_name"
+            android:layout_alignTop="@+id/iv_itemPhoto"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/iv_lostDate"
+            android:src="@drawable/lost_date"
+            android:layout_marginTop="21dp"
+            android:layout_below="@+id/iv_itemPhoto"
+            android:layout_alignLeft="@+id/iv_itemPhoto"
+            android:layout_alignStart="@+id/iv_itemPhoto" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/et_itemName"
+            android:layout_below="@+id/iv_itemName"
+            android:layout_alignLeft="@+id/iv_itemName"
+            android:layout_alignStart="@+id/iv_itemName"
+            android:hint="@string/wallet"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:ems="10"
+            android:id="@+id/et_itemLostDate"
+            android:layout_alignTop="@+id/iv_lostDate"
+            android:layout_alignLeft="@+id/et_itemName"
+            android:layout_alignStart="@+id/et_itemName"
+            android:layout_alignRight="@+id/et_itemName"
+            android:layout_alignEnd="@+id/et_itemName"
+            android:hint="@string/date"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/iv_lostLocation"
+            android:src="@drawable/lost_location"
+            android:layout_below="@+id/iv_lostDate"
+            android:layout_alignLeft="@+id/iv_lostDate"
+            android:layout_alignStart="@+id/iv_lostDate"
+            android:layout_marginTop="5dp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPostalAddress"
+            android:ems="10"
+            android:id="@+id/et_itemLocation"
+            android:layout_alignBottom="@+id/iv_lostLocation"
+            android:layout_alignLeft="@+id/et_itemLostDate"
+            android:layout_alignStart="@+id/et_itemLostDate"
+            android:hint="@string/location"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/iv_contact"
+            android:src="@drawable/contact"
+            android:layout_below="@+id/et_itemLocation"
+            android:layout_alignLeft="@+id/iv_lostLocation"
+            android:layout_alignStart="@+id/iv_lostLocation"
+            android:layout_marginTop="10dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:ems="10"
+            android:id="@+id/et_itemPhoneText"
+            android:layout_alignTop="@+id/iv_contact"
+            android:layout_alignLeft="@+id/et_itemLocation"
+            android:layout_alignStart="@+id/et_itemLocation"
+            android:hint="@string/phone"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/iv_itemReward"
+            android:src="@drawable/item_reward"
+            android:layout_below="@+id/iv_contact"
+            android:layout_alignLeft="@+id/iv_contact"
+            android:layout_alignStart="@+id/iv_contact"
+            android:layout_marginTop="10dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/iv_nt"
+            android:src="@drawable/nt"
+            android:layout_alignTop="@+id/iv_itemReward"
+            android:layout_alignLeft="@+id/et_itemPhoneText"
+            android:layout_alignStart="@+id/et_itemPhoneText" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/et_itemReward"
+            android:layout_alignTop="@+id/iv_nt"
+            android:layout_alignRight="@+id/et_itemPhoneText"
+            android:layout_alignEnd="@+id/et_itemPhoneText"
+            android:layout_toRightOf="@+id/iv_nt"
+            android:layout_toEndOf="@+id/iv_nt"
+            android:hint="@string/reward"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/iv_itemInfo"
+            android:src="@drawable/item_info"
+            android:layout_below="@+id/iv_itemReward"
+            android:layout_alignLeft="@+id/iv_itemReward"
+            android:layout_alignStart="@+id/iv_itemReward"
+            android:layout_marginTop="10dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/et_itemInfo"
+            android:layout_below="@+id/iv_itemInfo"
+            android:layout_alignLeft="@+id/iv_itemInfo"
+            android:layout_alignStart="@+id/iv_itemInfo"
+            android:hint="可說明項目狀況、特徵以及任何你想說的話"
+            android:layout_alignRight="@+id/et_itemPhoneText"
+            android:layout_alignEnd="@+id/et_itemPhoneText" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dp"
+            android:layout_below="@+id/et_itemInfo"
+            android:layout_alignLeft="@+id/et_itemInfo"
+            android:layout_alignStart="@+id/et_itemInfo"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/iv_itemAccept"
+                android:src="@drawable/accept"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/iv_itemCancel"
+                android:src="@drawable/cancel"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

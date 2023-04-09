@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">眾源協尋平台</string>
+    <!--<string name="app_name">眾源協尋平台</string>-->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_floor_choice">樓層選擇</string>
+    <string name="action_settings">網路ip設定</string>
+    <string name="action_account_settings">登入</string>
+    <string name="item_settings">物品設定</string>
+    <string name="settings">系統設定</string>
+
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="nav_drawer_items">
+        <item>首頁</item>
+        <item>商家</item>
+        <item>室內地圖</item>
+        <item>鄰近朋友</item>
+        <item>已連結物項目</item>
+        <item>協尋平台</item>
+        <item>系統資訊</item>
+    </string-array>
+
+    <!-- Content Description -->
+    <string name="desc_list_item_icon">Item Icon</string>
+    <string name="stop_route">停止導航</string>
+    <string name="emergency_mode_simulation">啟動緊急模擬</string>
+    <string name="emergency_mode_simulation_stop">取消緊急模擬</string>
+    <string name="customer_simulation">人群模擬</string>
+    <string name="shortest_time_path">最短時間路徑</string>
+    <string name="set_current_location">設置起始地點</string>
+    <string name="set_target_location">設置目標地點</string>
+    <string name="shortest_distance_path">最短距離路徑</string>
+    <string name="reset_button">重置</string>
+    <string name="txtHintUsername">帳號</string>
+    <string name="txtHintPassword">密碼</string>
+    <string name="txtHintIpAppress">IP Address</string>
+    <string name="accept">確定</string>
+    <string name="cancel">取消</string>
+
+    <string name="loadingSuccess">載入成功</string>
+    <string name="loadingSuccessMessage">成功載入地圖</string>
+    <string name="ok">好的</string>
+    <string name="choice_floor_message">請選擇樓層</string>
+    <string name="loading">正在載入資料…</string>
+    <string name="wait">請稍等</string>
+    <string name="logoutWarnMessage">您確定要登出嗎?</string>
+    <string name="Warn">警告</string>
+    <string name="loadingMap">伺服器載入中…</string>
+    <string name="findItemMessage">要查詢自己的物品嗎?</string>
+    <string name="loadingFailed">載入失敗，請確認網路連線是否正常</string>
+    <string name="itemList">物品清單</string>
+    <string name="no">不</string>
+    <string name="findConnectedItem">綁定物品查詢</string>
+    <string name="findConnectedItemMessage">要查詢自己的物品嗎?</string>
+    <string name="hereWeGo">立即前往</string>
+    <string name="immediatelyPlanThePath">立即規畫路徑到您的: </string>
+    <string name="loadingRegisteredItem">正在載入已註冊的物品清單…</string>
+    <string name="registeredItem">已註冊的物品</string>
+    <string name="findItem">尋找物品</string>
+    <string name="nothing">找不到資料</string>
+    <string name="findPeopleMessage">要查詢再線上的使用者嗎?</string>
+    <string name="languageChoice">語言</string>
+    <string name="wallet">錢包</string>
+    <string name="btn_post_lost_item">刊登遺失物</string>
+    <string name="btn_project_overview">專案概覽</string>
+    <string name="btn_location_simulation">室外位置</string>
+    <string name="title_activity_maps">室外位置</string>
+
+
+    <string name="new_message_notification_title">注意您的%1$s</string>
+
+    <!-- TODO: remove this placeholder text -->
+    <string name="new_message_notification_placeholder_text">哎呀！糟糕！您的%1$s正離你而去</string>
+    <string name="action_share">分享</string>
+    <string name="action_reply">回復</string>
+    <string name="location">台中市西屯區文華路100號</string>
+    <string name="phone">0922-123-456</string>
+    <string name="reward">5000</string>
+
+</resources>

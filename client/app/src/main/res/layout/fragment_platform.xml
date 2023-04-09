@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_post_lost_item"
+        android:id="@+id/btnPostLostItem"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnProjectOverview"
+        android:text="@string/btn_project_overview"
+        android:layout_marginBottom="70dp"
+        android:layout_above="@+id/btnPostLostItem"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_location_simulation"
+        android:id="@+id/btnLocationSimulation"
+        android:layout_marginTop="70dp"
+        android:layout_below="@+id/btnPostLostItem"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
