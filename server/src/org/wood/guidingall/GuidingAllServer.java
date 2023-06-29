@@ -27,12 +27,13 @@ public class GuidingAllServer {
     public static ArrayList<User> userList = new ArrayList<User>();
 
     public static void main(String args[]) {
+        // Load configuration
         PropertyConfigurator.configure("config//log4j.properties");
         Logger.getRootLogger().setLevel(Level.DEBUG);
         GuidingAllDB guidingAllDB = new GuidingAllDB();
 
         logger.info("Log in server begin!");
-
+        // Create socket connection
         try {
             serverSocket = new ServerSocket(Config.SOCKET_PORT);
         } catch (IOException e) {
@@ -41,6 +42,7 @@ public class GuidingAllServer {
         }
 
         do {
+            // Listen new client connection
             try {
                 user = new User(serverSocket.accept());
                 user.setAccount(JSON.KEY_UNKNOWN);
@@ -51,7 +53,7 @@ public class GuidingAllServer {
             }
 
             logger.info("A new client accepted: " + user.getIpAddress());
-
+            //Auth for incoming clients
             try {
                 JSONObject receiveObject;
                 String receiveMessage = user.receive();
@@ -62,7 +64,8 @@ public class GuidingAllServer {
                 String userPasswd = receiveObject.getString(JSON.KEY_USERPASSWD);
 
                 String dbUserPassword = guidingAllDB.getPasswordByUserName(userName);
-
+                
+                // Compare username and password
                 if(userPasswd.compareTo(dbUserPassword) == 0) {
                     user.setAccount(userName);
                     logger.info("A new client login successfull: " + user.getAccount());
@@ -81,6 +84,7 @@ public class GuidingAllServer {
                     }
 
                 } else {
+                    // Error handling
                     logger.info("A new client login failed: " + user.getIpAddress());
 
                     JSONObject jsonObject = new JSONObject();
